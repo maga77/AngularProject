@@ -1,0 +1,156 @@
+.profilecontainer{
+    width: 800px;
+    position: absolute;
+    top:150px;
+    /*left: 274px;*/
+    margin: 0 auto;
+    border: 1px solid pink;
+    padding: 25px;
+}
+
+#avatar_pic{
+    position: relative;
+    right: 25px;
+    border: 5px solid pink
+}
+
+#avatar_pic:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+/*#close{*/
+    /*position: absolute;*/
+    /*top: 38px;*/
+    /*font-size: 52px;*/
+    /*left: 15px;*/
+    /*opacity: 0;*/
+    /*color:white;*/
+    /*z-index: 3;*/
+
+/*}*/
+#close {
+    position: absolute;
+    top: 9px;
+    font-size: 24px;
+    left: 157px;
+    opacity: 0;
+    color: white;
+    z-index: 3;
+    display: inline-block;
+    background-color: darkblue;
+    border-radius: 50%;
+    padding: 1px 11px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+.show{
+    opacity: 1 !important;
+}
+
+#fileInput{
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    padding: 65px 0px;
+    opacity: 0.01;
+    width: 155px;
+    left:0px;
+
+}
+
+#avatar_container{
+    margin-left: 25px;
+}
+
+
+.userdata{
+    display: block;
+    margin: 7px 0px;
+    width: 205px;
+    text-align: center;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.001);
+    border-color: transparent;
+
+}
+
+
+#user_info{
+    position: absolute;
+    top: 19px;
+    left: 205px;
+}
+
+.cropArea {
+    background: #4db8ff;
+    overflow: hidden;
+    width:500px;
+    height:350px;
+    margin: 5px 0px;
+}
+
+.focus{
+    background-color: white;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
+    font-size: 17px;
+    border: 2px solid blue;
+    font-style: oblique;
+}
+
+.save{
+    position: relative;
+    bottom: 76px;
+    left: 403px;
+    margin-bottom: 10px;
+}
+
+#user_table
+{
+    border-collapse: collapse;
+    width:503px;
+    background-color: pink;
+}
+
+#user_table, .usertable_row
+{
+    border: 1px solid darkblue;
+}
+
+#user_table .first_column
+{
+    border-right: 1px solid darkblue;
+    text-align: center;
+    color: darkblue;
+    font-size:20px;
+}
+
+#user_table .second_column
+{
+    border-right: 1px solid darkblue;
+    text-align: center;
+    color: darkblue;
+    font-size:13px;
+    font-style: oblique;
+}
+
+.user_prof{
+    padding: 2px;
+    cursor: pointer;
+}
+#chat_box{
+    position: absolute;
+    right: 69px;
+    bottom: 46px;
+}
+
+.send{
+    position: absolute;
+    right: 102px;
+    bottom: 9px;
+}

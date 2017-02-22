@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.table_container{
+    width: 800px;
+    position: relative;
+    top:100px;
+    left: 274px;
+    margin: 0 auto
+
+}
+#box {
+    height: 100px;
+    background-color: lightblue;
+    position:relative;
+    width:150px;
+    height:90px;
+    top:0px;
+    left:0px;
+}
+
+#box.ng-hide {
+    animation: 0.5s myChange;
+}
+
+#table
+{
+    border-collapse: collapse;
+    width:425px;
+}
+
+#table, tr
+{
+    border: 1px solid darkblue;
+}
+
+#table .firstcolumn
+{
+    border-right: 1px solid darkblue;
+    text-align: center;
+    color: #00004d;
+    font-size:25px;
+}
+
+#table .secondcolumn
+{
+    border-right: 1px solid darkblue;
+    text-align: center;
+    color: #00004d;
+    font-size:20px;
+    font-style: oblique;
+}
+.change
+{
+    margin: 1px 5px;
+}
+#errortext
+{
+    color: #ffff33;
+    font-weight: bold;
+    font-size:19px;
+    font-style: oblique;
+    margin:5px 0px;
+}
+
+.background
+{
+    color:gray;
+}
+
+input[type = text]
+{
+    line-height:30px;
+    width:250px;
+}
+
+#searchResult
+{
+    font-size:20px;
+    font-style: oblique;
+    padding-top:3px;
+    color: #ffff33;
+    font-weight: bold;
+}

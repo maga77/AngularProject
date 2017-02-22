@@ -1,0 +1,65 @@
+ a {
+    text-decoration: none !important;
+}
+
+.modalcontainer h2{
+    color: darkblue;
+    font-size:35px;
+    font-style: oblique;
+    padding: 10px 0px;
+    text-align: center;
+}
+.menu a
+{
+    width: 250px;
+    font-size: 19px;
+    margin: 7px 5px;
+    display: block;
+    background-color: blue;
+    color: white;
+    font-style: oblique;
+    padding:5px;
+}
+.menu{
+    position: relative;
+}
+.plus{
+    display: table-cell;
+    background-color: yellow;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    left: -51px;
+    top: 1px;
+    font-size: 20px;
+    height:33px;
+
+}
+.menu .submenu li a
+{
+    width: 250px;
+    font-size: 15px;
+    background-color: #668cff;
+    margin-top:5px;
+    display: block;
+    font-style: oblique;
+    color: darkblue;
+    padding:5px;
+}
+.plus:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+
+ }
+
+.plus.active:after {
+      content: "\2212";
+  }
+
+
+ .show {
+     display: none;
+ }
+

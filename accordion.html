@@ -1,0 +1,11 @@
+<div class="modalcontainer">
+    <h2>Accordion</h2>
+    <ul>
+        <li ng-repeat="eachmenu in menu" class="menu"><a>{{eachmenu}}</a>
+            <span class="plus" ng-click="open($index)"></span>
+            <ul class="submenu" ng-style="mystyle"  ng-class="">
+                <li ng-repeat="eachsubmenu in submenu"><a>{{eachsubmenu}}</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

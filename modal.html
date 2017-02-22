@@ -1,0 +1,8 @@
+<div class="modalcontainer">
+    <h2 id="modalName">Image Modal</h2>
+    <img id="myImg" ng-src={{image}}  width="300" height="200" ng-click="open()">
+    <div id="myModal" class="modal" ng-style="mystyle">
+        <span class="close" ng-click="open()">&times;</span>
+        <img class="modal-content" id="img01" ng-src="{{image}}">
+    </div>
+</div>

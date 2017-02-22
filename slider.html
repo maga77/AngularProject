@@ -1,0 +1,11 @@
+<div ng-init="init()">
+    <div id = "img_container">
+        <img ng-src="images/{{ x }}" class="eachImage" width="280" height="190" ng-click="zoom()">
+        <div id="forward_button" ng-click="forward()">></div>
+        <div id="backward_button" ng-click="backward()"><</div>
+        <div id="myModal" class="modal" ng-style="mystyle">
+            <span class="close" ng-click="close()">&times;</span>
+            <img class="modal-content" id="img01" ng-src="images/{{t}}">
+        </div>
+    </div>
+</div>

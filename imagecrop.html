@@ -1,0 +1,9 @@
+<div class="imgcropcontainer">
+    <div>Select an image file: <input type="file" id="fileInput" /></div>
+    <div class="cropArea2">
+        <img-crop image="myImage" result-image="myCroppedImage" area-type="square"></img-crop>
+    </div>
+    <input type="checkbox" ng-model="myText" id="check">
+    <div>Cropped Image:</div>
+    <div><img ng-src="{{(myText)? myCroppedImage: ''}}" /></div>
+</div>

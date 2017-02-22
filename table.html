@@ -1,0 +1,23 @@
+<div class="table_container">
+    <form>
+        <input type="text" ng-model="name" >
+        <input ng-click="Insert()" type="button" value="Insert" class="btn btn-primary" ng-disabled="button">
+        <input ng-click="UpdateTable()" type="button" value="UpdateTable" class="btn btn-primary"><br/>
+        <p id="errortext">{{errorInsert}}</p><br/>
+        <input type="text" ng-model="searchingItem" ng-keyup="Searching()" ng-blur="ClearSearchField()"  placeholder="Search...">
+        <input ng-click="Search()" type="button" value="Search" class="btn btn-primary">
+        <p id="searchResult">{{errorSearch}}</p>
+        <ul>
+            <li ng-repeat="x in matchingResult | filter:searchingItem">
+                {{ x }}
+            </li>
+        </ul>
+        <table id="table">
+            <tr ng-repeat="x in dates">
+                <td class="firstcolumn">{{ ($index + 1) + "." }}</td><td class="secondcolumn">{{x}}<hr><input ng-click="del($index)" type="button" value="Delete" class=" change btn btn-primary btn-sm"><input ng-click="Updete($index)" type="button" value="Update" class=" change btn btn-primary btn-sm"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+

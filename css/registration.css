@@ -1,0 +1,14 @@
+.registrcontainer{
+    width: 800px;
+    position: relative;
+    top:100px;
+    left: 274px;
+    margin: 0 auto
+}
+
+.registration
+{
+    line-height:30px;
+    width:250px;
+    font-style: oblique;
+}

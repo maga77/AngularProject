@@ -1,0 +1,14 @@
+<div class="registrcontainer">
+    <input type="text" ng-model="firstname" class="registration" placeholder="Firstname">
+    <br><br>
+    <input type="text" ng-model="lastname" class="registration" placeholder="Lastname">
+    <br><br>
+    <input type="text" ng-model="email" class="registration" placeholder="Email"><br><br>
+    <input type="password" ng-model="password" class="registration" placeholder="Password"><br><br>
+    <ul>
+        <li ng-repeat="error in reg_errors">
+            {{error}}
+        </li>
+    </ul>
+    <button ng-click="Registration()" class="btn btn-primary">Registration</button>
+</div>

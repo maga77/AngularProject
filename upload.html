@@ -1,0 +1,8 @@
+<div class="uploadcontainer">
+    <form name="myForm">
+        <input type='file' ng-model-instant onchange="angular.element(this).scope().imageUpload(this)"/>
+    </form>
+    <ul class="imageContainer">
+        <li ng-repeat="image in Images"><img ng-src="{{image}}" width="150" height="150"/></li>
+    </ul>
+</div>

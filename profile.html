@@ -1,0 +1,27 @@
+<div class="profilecontainer">
+    <div id="avatar_container">
+        <input type='file' id="fileInput" ng-disabled="filebtn"/>
+        <img ng-src="{{(myText)? myCroppedImage: im}}" width="155" height="152" id="avatar_pic">
+        <span id="close" ng-class="" ng-click="change_pic()">X</span>
+    </div>
+    <div id="user_info">
+        <input ng-repeat="(x,y) in keys track by $index" ng-model="keys[x]"  class="userdata" ng-click="myclick($index)" ng-class="">
+    </div>
+    <button ng-click="save_changes()" class="save btn btn-primary">Save Changes</button><br>
+    <button ng-click="show_users()" class="save btn btn-primary">Show all users</button>
+    <div ng-show="myshow">
+        <div class="cropArea">
+            <img-crop image="myImage" result-image="myCroppedImage" area-type="square"></img-crop>
+        </div>
+        <input type="checkbox" ng-model="myText" id="check" ng-click="mychange()">
+    </div>
+    <table id="user_table">
+        <tr ng-repeat="x in new_key" class="usertable_row">
+            <td class="first_column">{{ ($index + 1) + "." }}</td><td class="second_column">Firstname: {{x.firstname}}</td><td class="second_column">Lastname: {{x.lastname}}</td><td class="second_column">Email: {{x.email}}</td><td class="second_column"><img src="{{x.image}}" class="user_prof" width="50" height="50" ng-click="open_chatbox($index)" ></td>
+        </tr>
+        <textarea ng-show="show_chatbox" rows="4" cols="25" id="chat_box"></textarea>
+        <button ng-show="show_chatbox" class="send btn btn-primary" ng-click="send_message()">Send message</button>
+    </table>
+</div>
+
+
